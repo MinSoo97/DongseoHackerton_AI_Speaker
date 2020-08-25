@@ -37,7 +37,7 @@ def generate_request():
             
             rms = audioop.rms(content,2)
             #print_rms(rms)
-
+# 사용자 음성 인식 하는 방법
 def getVoice2Text():	
     print ("\n\n음성인식을 시작합니다.\n\n\n")
     channel = grpc.secure_channel('{}:{}'.format(HOST, PORT), UA.getCredentials())
